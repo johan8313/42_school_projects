@@ -6,7 +6,7 @@
 /*   By: johmarti <johmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/26 09:49:31 by johmarti          #+#    #+#             */
-/*   Updated: 2024/03/27 15:24:59 by johmarti         ###   ########.fr       */
+/*   Updated: 2024/03/27 15:49:35 by johmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ int	valid_path2(t_game *game, t_list *map, int height)
 int	path(t_list *map, int height, int width)
 {
 	t_list	*current;
+
 	current = map;
 	while (current != NULL && (current->x != width || current->y != height))
 	{

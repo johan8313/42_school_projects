@@ -6,7 +6,7 @@
 /*   By: johmarti <johmarti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 12:20:36 by johmarti          #+#    #+#             */
-/*   Updated: 2024/03/27 15:10:04 by johmarti         ###   ########.fr       */
+/*   Updated: 2024/03/27 15:49:02 by johmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,15 +32,16 @@ int	free_game(t_game *game, int type)
 
 void	free_map(t_list **map)
 {
-	t_list *current_node = *map;
-	t_list *next_node;
+	t_list	*current_node;
+	t_list	*next_node;
 
+	current_node = *map;
 	while (current_node != NULL)
 	{
 		next_node = current_node->next;
 		free(current_node);
 		current_node = next_node;
-		}
+	}
 	*map = NULL;
 }
 
