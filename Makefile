@@ -4,7 +4,7 @@ CC			= gcc
 RM			= rm -rf
 CFLAGS		= -Wall -Wextra -Werror -g3
 
-SRC			= main
+SRC			= main image map1 map2 moove1 moove2 moove3 utils
 SRCS		= $(addsuffix .c, ${SRC})
 
 OBJ_DIR		= obj
